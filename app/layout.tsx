@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { Metadata } from "next";
 import Header from "./components/Header";
-import "./globals.css";
 import { Inter } from "next/font/google";
 import BackToTop from "./components/BackToTop";
 import { createClient } from "@/prismicio";
+
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,10 +25,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} bg-[rgb(36,36,36)] text-white`}>
-        {/* @ts-expect-error Async Server Component */}
         <Header />
         {children}
-        {/* @ts-expect-error Async Server Component */}
         <BackToTop />
       </body>
     </html>
