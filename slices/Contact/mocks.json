@@ -1,0 +1,46 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Including"
+						}
+					}
+				]
+			},
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Cupidatat anim commodo fugiat cupidatat et commodo ad nisi commodo et."
+						}
+					}
+				]
+			},
+			"phone_number": {
+				"__TYPE__": "FieldContent",
+				"value": "favorite",
+				"type": "Text"
+			},
+			"email": {
+				"__TYPE__": "FieldContent",
+				"value": "engineer",
+				"type": "Text"
+			},
+			"location": {
+				"__TYPE__": "FieldContent",
+				"value": "stiff",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

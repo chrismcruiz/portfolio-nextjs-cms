@@ -1,0 +1,85 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Rhythm"
+						}
+					}
+				]
+			},
+			"information": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Ea deserunt cupidatat sunt est incididunt velit culpa. Labore incididunt qui aute magna proident do cupidatat ex mollit eiusmod."
+						}
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"project_image",
+						{
+							"origin": {
+								"id": "main",
+								"url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68",
+								"width": 8640,
+								"height": 8640
+							},
+							"url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68",
+							"width": 8640,
+							"height": 8640,
+							"edit": {
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								},
+								"background": "transparent"
+							},
+							"credits": null,
+							"alt": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					],
+					[
+						"project_title",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "plane",
+							"type": "Text"
+						}
+					],
+					[
+						"project_description",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Aliquip Lorem cillum tempor proident laboris laboris et mollit."
+									}
+								}
+							]
+						}
+					]
+				]
+			}
+		]
+	}
+]

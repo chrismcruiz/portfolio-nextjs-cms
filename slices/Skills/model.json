@@ -1,0 +1,46 @@
+{
+  "id": "skills",
+  "type": "SharedSlice",
+  "name": "Skills",
+  "description": "Skills",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2,heading3"
+          }
+        },
+        "instructions": {
+          "type": "StructuredText",
+          "config": {
+            "label": "instructions",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          }
+        }
+      },
+      "items": {
+        "skill": {
+          "type": "Image",
+          "config": { "label": "Skill", "constraint": {}, "thumbnails": [] }
+        },
+        "proficiency": {
+          "type": "Number",
+          "config": { "label": "Proficiency", "placeholder": "" }
+        }
+      }
+    }
+  ]
+}

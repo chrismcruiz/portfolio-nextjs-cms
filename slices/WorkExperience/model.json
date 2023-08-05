@@ -1,0 +1,77 @@
+{
+  "id": "work_experience",
+  "type": "SharedSlice",
+  "name": "WorkExperience",
+  "description": "WorkExperience",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {},
+      "items": {
+        "company_logo": {
+          "type": "Image",
+          "config": {
+            "label": "Company Logo",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "company_name": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Company Name",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "role": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Role",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,heading4,heading5"
+          }
+        },
+        "start_date": {
+          "type": "Date",
+          "config": { "label": "Start Date", "placeholder": "" }
+        },
+        "end_date": {
+          "type": "Date",
+          "config": { "label": "End Date", "placeholder": "" }
+        },
+        "skill_1": {
+          "type": "Image",
+          "config": { "label": "Skill 1", "constraint": {}, "thumbnails": [] }
+        },
+        "skill_2": {
+          "type": "Image",
+          "config": { "label": "Skill 2", "constraint": {}, "thumbnails": [] }
+        },
+        "skill_3": {
+          "type": "Image",
+          "config": { "label": "Skill 3", "constraint": {}, "thumbnails": [] }
+        },
+        "task_1": {
+          "type": "Text",
+          "config": { "label": "Task 1", "placeholder": "" }
+        },
+        "task_2": {
+          "type": "Text",
+          "config": { "label": "Task 2", "placeholder": "" }
+        },
+        "task_3": {
+          "type": "Text",
+          "config": { "label": "Task 3", "placeholder": "" }
+        }
+      }
+    }
+  ]
+}

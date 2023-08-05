@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -14,14 +14,83 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+} */
+
+@layer components {
+  .sectionHeading {
+    @apply absolute top-0 uppercase tracking-[20px] text-gray-500 text-2xl;
+  }
+
+  .ringCircle {
+    @apply absolute border border-[#333333] rounded-full mt-52;
+  }
+
+  .contactInput {
+    @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-[#242424] text-gray-500 placeholder-gray-500 transition-all focus:border-[#F7AB0A]/40 focus:text-[#F7AB0A]/40 hover:border-[#F7AB0A]/40;
+  }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* Embla Carousel */
+
+.embla {
+  --slide-spacing: 1rem;
+  --slide-size: 100%;
+  --slide-gap: 10px;
+  /* padding: 1.6rem; */
+  padding: 3rem 0;
+  max-width: 100%;
+}
+
+.embla__viewport {
+  overflow: hidden;
+}
+
+.embla__container {
+  backface-visibility: hidden;
+  display: flex;
+  touch-action: pan-y;
+  margin-left: calc(var(--slide-spacing) * -1);
+}
+
+.embla__slide {
+  flex: 0 0 var(--slide-size);
+  min-width: 0;
+  padding-left: var(--slide-spacing);
+  position: relative;
+  margin-right: var(--slide-gap);
+}
+
+.embla__slide--projects {
+  flex: 0 0 var(--slide-size);
+  min-width: 0;
+  padding-left: var(--slide-spacing);
+  position: relative;
+}
+
+/* @media (min-width: 768px) {
+  .embla__slide {
+    flex: 0 0 50%;
+  }
+} */
+
+@media (min-width: 1024px) {
+  .embla {
+    max-width: 800px;
+  }
+
+  .embla__slide {
+    flex: 0 0 50%;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .embla {
+    max-width: 1300px;
+  }
+
+  .embla__slide {
+    flex: 0 0 33.3%;
+    margin-right: 30px;
+  }
 }

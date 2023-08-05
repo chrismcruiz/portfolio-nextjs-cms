@@ -1,0 +1,51 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Clothes"
+						}
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "In aute enim enim commodo."
+						}
+					}
+				]
+			},
+			"button_text": {
+				"__TYPE__": "FieldContent",
+				"value": "route",
+				"type": "Text"
+			},
+			"title_first_sentence": {
+				"__TYPE__": "FieldContent",
+				"value": "crack",
+				"type": "Text"
+			},
+			"title_second_sentence": {
+				"__TYPE__": "FieldContent",
+				"value": "instrument",
+				"type": "Text"
+			},
+			"title_third_sentence": {
+				"__TYPE__": "FieldContent",
+				"value": "try",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]
