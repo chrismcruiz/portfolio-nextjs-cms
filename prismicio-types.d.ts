@@ -636,6 +636,26 @@ export interface ProjectsSliceDefaultItem {
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
   project_description: prismic.RichTextField;
+
+  /**
+   * Link to Demo field in *Projects → Items*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: projects.items[].link_to_demo
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  link_to_demo: prismic.LinkField;
+
+  /**
+   * Link to Repo field in *Projects → Items*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: projects.items[].link_to_repo
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  link_to_repo: prismic.LinkField;
 }
 
 /**
@@ -746,51 +766,6 @@ type SkillsSliceVariation = SkillsSliceDefault;
 export type SkillsSlice = prismic.SharedSlice<"skills", SkillsSliceVariation>;
 
 /**
- * Primary content in *Testing → Primary*
- */
-export interface TestingSliceDefaultPrimary {
-  /**
-   * Title test field in *Testing → Primary*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: testing.primary.title_test
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  title_test: prismic.KeyTextField;
-}
-
-/**
- * Default variation for Testing Slice
- *
- * - **API ID**: `default`
- * - **Description**: Default
- * - **Documentation**: https://prismic.io/docs/slice
- */
-export type TestingSliceDefault = prismic.SharedSliceVariation<
-  "default",
-  Simplify<TestingSliceDefaultPrimary>,
-  never
->;
-
-/**
- * Slice variation for *Testing*
- */
-type TestingSliceVariation = TestingSliceDefault;
-
-/**
- * Testing Shared Slice
- *
- * - **API ID**: `testing`
- * - **Description**: Testing
- * - **Documentation**: https://prismic.io/docs/slice
- */
-export type TestingSlice = prismic.SharedSlice<
-  "testing",
-  TestingSliceVariation
->;
-
-/**
  * Primary content in *Text → Primary*
  */
 export interface TextSliceDefaultPrimary {
@@ -831,6 +806,21 @@ type TextSliceVariation = TextSliceDefault;
  * - **Documentation**: https://prismic.io/docs/slice
  */
 export type TextSlice = prismic.SharedSlice<"text", TextSliceVariation>;
+
+/**
+ * Primary content in *WorkExperience → Primary*
+ */
+export interface WorkExperienceSliceDefaultPrimary {
+  /**
+   * Title field in *WorkExperience → Primary*
+   *
+   * - **Field Type**: Title
+   * - **Placeholder**: *None*
+   * - **API ID Path**: work_experience.primary.title
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  title: prismic.TitleField;
+}
 
 /**
  * Primary content in *WorkExperience → Items*
@@ -956,7 +946,7 @@ export interface WorkExperienceSliceDefaultItem {
  */
 export type WorkExperienceSliceDefault = prismic.SharedSliceVariation<
   "default",
-  Record<string, never>,
+  Simplify<WorkExperienceSliceDefaultPrimary>,
   Simplify<WorkExperienceSliceDefaultItem>
 >;
 
@@ -1015,9 +1005,6 @@ declare module "@prismicio/client" {
       SkillsSlice,
       SkillsSliceVariation,
       SkillsSliceDefault,
-      TestingSlice,
-      TestingSliceVariation,
-      TestingSliceDefault,
       TextSlice,
       TextSliceVariation,
       TextSliceDefault,

@@ -18,14 +18,12 @@ const About = ({ slice }: AboutProps): JSX.Element => {
   return (
     <section
       id="about"
-      data-slice-type={slice.slice_type}
-      data-slice-variation={slice.variation}
     >
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
-        className="h-screen md:h-full flex flex-col relative text-center md:text-left md:flex-row px-10 justify-evenly mx-auto items-center max-w-7xl"
+        className=" max-w-7xl mx-auto text-center px-10 py-20"
       >
         <PrismicRichText
           field={title}
@@ -35,32 +33,39 @@ const About = ({ slice }: AboutProps): JSX.Element => {
             ),
           }}
         />
-        <PrismicNextImage
-          field={image}
-          className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[550px]"
-        />
-        <div className="space-y-10 px-0 md:px-10">
-          <PrismicRichText
-            field={subtitle}
-            components={{
-              heading3: ({ children }) => (
-                <h3 className="text-4xl font-semibold">{children}</h3>
-              ),
-              label: ({ node, children }) => (
-                <span className={`${node.data.label} decoration-[#F7AB0A]/50`}>
-                  {children}
-                </span>
-              ),
-            }}
-          />
-          <PrismicRichText
-            field={description}
-            components={{
-              paragraph: ({ children }) => (
-                <p className="text-base">{children}</p>
-              ),
-            }}
-          />
+        <div className="w-full md:flex md:gap-2">
+          <div className="w-full flex justify-center">
+            <PrismicNextImage
+              field={image}
+              // -mb-20 
+              className="mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[550px]"
+            />
+          </div>
+          <div className="w-full px-0 md:px-10 text-left space-y-10">
+            <PrismicRichText
+              field={subtitle}
+              components={{
+                heading3: ({ children }) => (
+                  <h3 className="text-4xl font-semibold">{children}</h3>
+                ),
+                label: ({ node, children }) => (
+                  <span
+                    className={`${node.data.label} decoration-[#27B2BA]/50`}
+                  >
+                    {children}
+                  </span>
+                ),
+              }}
+            />
+            <PrismicRichText
+              field={description}
+              components={{
+                paragraph: ({ children }) => (
+                  <p className="text-base">{children}</p>
+                ),
+              }}
+            />
+          </div>
         </div>
       </motion.div>
     </section>

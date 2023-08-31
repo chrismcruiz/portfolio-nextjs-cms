@@ -22,7 +22,8 @@ const Header = async () => {
   const ICON_EMAIL = "email";
 
   return (
-    <header className={dmMono.className}>
+    // dmMono.className
+    <header className="sticky top-0 z-10 bg-[rgb(36,36,36)]">
       <Disclosure as="nav">
         {({ open }) => (
           <div className="container px-6 py-4 mx-auto">
@@ -90,7 +91,7 @@ const Header = async () => {
               </div>
             </div>
             {/* Mobile Nav */}
-            <Disclosure.Panel>
+            <Disclosure.Panel className="absolute left-0 right-0 z-10 bg-[rgb(36,36,36)]">
               {navigation?.map(({ label }, index) => {
                 const anchorLabel = asText(label).toLowerCase() || "";
                 return (

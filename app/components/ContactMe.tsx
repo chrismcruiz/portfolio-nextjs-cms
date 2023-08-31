@@ -18,7 +18,7 @@ const ContactMe = (props: Props) => {
     window.location.href = `mailto:chrismcruiz@gmail.com?subject=${formData.subject}&body=${formData.message}`;
   };
   return (
-    <div className="h-screen relative flex flex-col items-center text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto">
+    <div className="h-screen md:h-full flex flex-col items-center text-center md:text-left max-w-7xl px-10 justify-evenly mx-auto">
       <h3 className="sectionHeading">Contact</h3>
       <div className="flex flex-col space-y-10">
         <h4 className="text-4xl font-semibold text-center">

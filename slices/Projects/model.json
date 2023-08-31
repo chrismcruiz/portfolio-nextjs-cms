@@ -52,6 +52,22 @@
             "allowTargetBlank": true,
             "single": "paragraph"
           }
+        },
+        "link_to_demo": {
+          "type": "Link",
+          "config": {
+            "label": "Link to Demo",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "link_to_repo": {
+          "type": "Link",
+          "config": {
+            "label": "Link to Repo",
+            "placeholder": "",
+            "select": null
+          }
         }
       }
     }

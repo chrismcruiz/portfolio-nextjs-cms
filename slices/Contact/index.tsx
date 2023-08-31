@@ -33,7 +33,7 @@ const Contact = ({ slice }: ContactProps): JSX.Element => {
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
     >
-      <div className="h-screen relative flex flex-col items-center text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto">
+      <div className="container md:h-full flex flex-col items-center text-center md:text-left max-w-7xl px-10 py-20 justify-evenly mx-auto">
         <PrismicRichText
           field={title}
           components={{
@@ -42,15 +42,15 @@ const Contact = ({ slice }: ContactProps): JSX.Element => {
             ),
           }}
         />
-        <div className="flex flex-col space-y-10">
+        <div className="flex flex-col space-y-10 w-full">
           <PrismicRichText
             field={subtitle}
             components={{
               paragraph: ({ children }) => (
-                <h3 className="text-4xl font-semibold">{children}</h3>
+                <h3 className="text-4xl font-semibold text-center">{children}</h3>
               ),
               label: ({ node, children }) => (
-                <span className={`${node.data.label} decoration-[#F7AB0A]/50`}>
+                <span className={`${node.data.label} decoration-[#27B2BA]/50`}>
                   {children}
                 </span>
               ),
@@ -59,15 +59,15 @@ const Contact = ({ slice }: ContactProps): JSX.Element => {
 
           <div className="space-y-10">
             <div className="flex justify-center items-center space-x-5">
-              <PhoneIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
+              <PhoneIcon className="text-[#64FFDA] h-7 w-7 animate-pulse" />
               <p className="text-2xl">{phone_number}</p>
             </div>
             <div className="flex justify-center items-center space-x-5">
-              <EnvelopeIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
+              <EnvelopeIcon className="text-[#64FFDA] h-7 w-7 animate-pulse" />
               <p className="text-2xl">{email}</p>
             </div>
             <div className="flex justify-center items-center space-x-5">
-              <MapPinIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
+              <MapPinIcon className="text-[#64FFDA] h-7 w-7 animate-pulse" />
               <p className="text-2xl">{location}</p>
             </div>
           </div>
@@ -80,13 +80,13 @@ const Contact = ({ slice }: ContactProps): JSX.Element => {
               <input
                 {...register("name")}
                 placeholder="Name"
-                className="contactInput"
+                className="contactInput w-1/2"
                 type="text"
               />
               <input
                 {...register("email")}
                 placeholder="Email"
-                className="contactInput"
+                className="contactInput w-1/2"
                 type="email "
               />
             </div>
@@ -103,7 +103,7 @@ const Contact = ({ slice }: ContactProps): JSX.Element => {
             />
             <button
               type="submit"
-              className="bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold text-lg"
+              className="bg-[#64FFDA] py-5 px-10 rounded-md text-black font-bold text-lg"
             >
               Submit
             </button>

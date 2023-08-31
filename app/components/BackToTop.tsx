@@ -14,7 +14,7 @@ const BackToTop = async () => {
         <Link href="#hero">
           <PrismicNextImage
             field={image}
-            className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
+            className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer object-cover"
           />
         </Link>
       </div>

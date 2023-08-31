@@ -11,7 +11,17 @@
       "version": "initial",
       "description": "Default",
       "imageUrl": "",
-      "primary": {},
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2,heading3"
+          }
+        }
+      },
       "items": {
         "company_logo": {
           "type": "Image",
@@ -41,35 +51,62 @@
         },
         "start_date": {
           "type": "Date",
-          "config": { "label": "Start Date", "placeholder": "" }
+          "config": {
+            "label": "Start Date",
+            "placeholder": ""
+          }
         },
         "end_date": {
           "type": "Date",
-          "config": { "label": "End Date", "placeholder": "" }
+          "config": {
+            "label": "End Date",
+            "placeholder": ""
+          }
         },
         "skill_1": {
           "type": "Image",
-          "config": { "label": "Skill 1", "constraint": {}, "thumbnails": [] }
+          "config": {
+            "label": "Skill 1",
+            "constraint": {},
+            "thumbnails": []
+          }
         },
         "skill_2": {
           "type": "Image",
-          "config": { "label": "Skill 2", "constraint": {}, "thumbnails": [] }
+          "config": {
+            "label": "Skill 2",
+            "constraint": {},
+            "thumbnails": []
+          }
         },
         "skill_3": {
           "type": "Image",
-          "config": { "label": "Skill 3", "constraint": {}, "thumbnails": [] }
+          "config": {
+            "label": "Skill 3",
+            "constraint": {},
+            "thumbnails": []
+          }
         },
         "task_1": {
           "type": "Text",
-          "config": { "label": "Task 1", "placeholder": "" }
+          "config": {
+            "label": "Task 1",
+            "placeholder": ""
+          }
         },
         "task_2": {
           "type": "Text",
-          "config": { "label": "Task 2", "placeholder": "" }
+          "config": {
+            "label": "Task 2",
+            "placeholder": ""
+          }
         },
         "task_3": {
           "type": "Text",
-          "config": { "label": "Task 3", "placeholder": "" }
+          "config": {
+            "label": "Task 3",
+            "placeholder": ""
+          }
         }
       }
     }

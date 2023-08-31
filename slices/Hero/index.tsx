@@ -49,9 +49,9 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
             className={`text-[clamp(32px,_8vw,_80px)] xl:pr-7 font-semibold ${dmMono.className}`}
           >
             <span>{text}</span>
-            <Cursor cursorColor="#F7AB0A" />
+            <Cursor cursorColor="#64FFDA" />
           </h1>
-          <div className="mt-5 lg:mt-10 space-y-8">
+          <div className="mt-5 lg:mt-14 space-y-8 lg:space-y-12">
             <PrismicRichText
               field={subtitle}
               components={{
@@ -62,11 +62,12 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
                 ),
               }}
             />
+            {/* text-[#8892b0] */}
             <PrismicRichText
               field={description}
               components={{
                 paragraph: ({ children }) => (
-                  <p className="max-w-[540px] text-lg lg:text-xl leading-relaxed text-[#8892b0]">
+                  <p className="max-w-[540px] text-lg lg:text-xl leading-relaxed">
                     {children}
                   </p>
                 ),
@@ -76,7 +77,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
           <div>
             <Link
               href="#projects"
-              className={`${dmMono.className} inline-block mt-10 lg:mt-16 text-[#64ffda] px-6 py-4 border border-solid border-[#64ffda] rounded-[4px] text-sm lg:text-lg`}
+              className={`inline-block mt-10 lg:mt-16 text-[#64ffda] px-6 py-4 border border-solid border-[#64ffda] rounded-[4px] text-sm lg:text-lg`}
             >
               {button_text}
             </Link>

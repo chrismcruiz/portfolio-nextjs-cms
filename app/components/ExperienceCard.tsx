@@ -52,7 +52,7 @@ const ExperienceCard = ({
         <PrismicRichText
           field={company_name}
           components={{
-            paragraph: ({ children }) => (
+            preformatted: ({ children }) => (
               <p className="font-bold text-2xl mt-1">{children}</p>
             ),
           }}
