@@ -44,11 +44,11 @@ const ProjectCard = ({
         }}
       />
       <div className="projects-buttons flex gap-2 justify-center">
-        {link_to_demo.link_type !== 'Any' &&
+        {link_to_demo?.link_type !== 'Any' &&
           <PrismicNextLink field={link_to_demo} className="border border-[#3AD9CE] px-2 py-1" target="_blank">Link to Demo</PrismicNextLink>
 
         }
-        {link_to_repo.link_type !== 'Any' &&
+        {link_to_repo?.link_type !== 'Any' &&
           <PrismicNextLink field={link_to_repo} className="border border-[#3AD9CE] px-2 py-1" target="_blank">Link to Repo</PrismicNextLink>}
       </div>
     </div>
