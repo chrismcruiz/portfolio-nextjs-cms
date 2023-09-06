@@ -45,11 +45,23 @@ const ProjectCard = ({
       />
       <div className="projects-buttons flex gap-2 justify-center">
         {link_to_demo?.link_type !== 'Any' &&
-          <PrismicNextLink field={link_to_demo} className="border border-[#3AD9CE] px-2 py-1" target="_blank">Link to Demo</PrismicNextLink>
+        // text-[#64ffda] p-2 border border-solid border-[#64ffda] rounded-[4px]
+        
+          <PrismicNextLink field={link_to_demo} className="relative inline-block text-lg group" target="_blank"><span className="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
+          <span className="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></span>
+          <span className="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-gray-900 group-hover:-rotate-180 ease"></span>
+          <span className="relative">Link to Demo</span>
+          </span>
+          <span className="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-gray-900 rounded-lg group-hover:mb-0 group-hover:mr-0" data-rounded="rounded-lg"></span></PrismicNextLink>
 
         }
         {link_to_repo?.link_type !== 'Any' &&
-          <PrismicNextLink field={link_to_repo} className="border border-[#3AD9CE] px-2 py-1" target="_blank">Link to Repo</PrismicNextLink>}
+           <PrismicNextLink field={link_to_repo} className="relative inline-block text-lg group" target="_blank"><span className="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
+           <span className="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></span>
+           <span className="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-gray-900 group-hover:-rotate-180 ease"></span>
+           <span className="relative">Link to Repo</span>
+           </span>
+           <span className="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-gray-900 rounded-lg group-hover:mb-0 group-hover:mr-0" data-rounded="rounded-lg"></span></PrismicNextLink>}
       </div>
     </div>
   </div>

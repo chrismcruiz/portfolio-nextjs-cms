@@ -27,7 +27,7 @@ const Header = async () => {
       <Disclosure as="nav">
         {({ open }) => (
           <div className="container px-6 py-4 mx-auto">
-            <div className="flex justify-between items-center h-16">
+            <div className="flex justify-between items-center h-12">
               {/* Social Icons */}
               <motion.div
                 initial={{ x: -500, opacity: 0, scale: 0.5 }}
@@ -65,7 +65,7 @@ const Header = async () => {
                             field={label}
                             components={{
                               label: ({ children }) => (
-                                <span className="text-[#64ffda] p-2 border border-solid border-[#64ffda] rounded-[4px]">
+                                <span className="text-[#64ffda] p-2 border border-solid border-[#64ffda] rounded-[4px] hover:border-gray-900 hover:text-gray-900 hover:bg-[#64ffda]">
                                   {children}
                                 </span>
                               ),
@@ -105,7 +105,7 @@ const Header = async () => {
                         field={label}
                         components={{
                           label: ({ children }) => (
-                            <span className="text-[#64ffda] p-2 border border-solid border-[#64ffda] rounded-[4px]">
+                            <span className="text-[#64ffda] p-2 border border-solid border-[#64ffda] rounded-[4px] hover:border-gray-900 hover:text-gray-900 hover:bg-[#64ffda]">
                               {children}
                             </span>
                           ),

@@ -74,7 +74,7 @@ const Projects = ({ slice }: ProjectsProps): JSX.Element => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
         // h-screen 
-        className="container md:h-full flex flex-col overflow-hidden text-left max-w-full justify-evenly mx-auto items-center z-0 space-y-10 relative px-10 py-20"
+        className="container md:h-full flex flex-col overflow-hidden text-left max-w-full justify-evenly mx-auto items-center z-0 space-y-10 relative px-10 py-40"
       >
         <PrismicRichText
           field={title}

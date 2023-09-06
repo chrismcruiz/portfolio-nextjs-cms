@@ -103,7 +103,7 @@ const Contact = ({ slice }: ContactProps): JSX.Element => {
             />
             <button
               type="submit"
-              className="bg-[#64FFDA] py-5 px-10 rounded-md text-black font-bold text-lg"
+              className="bg-[#64ffda] py-5 px-10 rounded-md text-gray-900 font-bold text-lg hover:bg-transparent hover:text-[#64ffda] border border-gray-900 hover:border-[#64ffda]"
             >
               Submit
             </button>

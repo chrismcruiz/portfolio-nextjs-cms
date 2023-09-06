@@ -67,7 +67,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
               field={description}
               components={{
                 paragraph: ({ children }) => (
-                  <p className="max-w-[540px] text-lg lg:text-xl leading-relaxed">
+                  <p className="max-w-[540px] text-lg lg:text-xl leading-relaxed text-[#8892b0]">
                     {children}
                   </p>
                 ),
@@ -77,7 +77,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
           <div>
             <Link
               href="#projects"
-              className={`inline-block mt-10 lg:mt-16 text-[#64ffda] px-6 py-4 border border-solid border-[#64ffda] rounded-[4px] text-sm lg:text-lg`}
+              className={`inline-block mt-10 lg:mt-16 text-[#64ffda] px-6 py-4 border border-solid border-[#64ffda] rounded-[4px] text-sm lg:text-lg hover:border-gray-900 hover:text-gray-900 hover:bg-[#64ffda]`}
             >
               {button_text}
             </Link>
