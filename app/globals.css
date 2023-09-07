@@ -82,6 +82,11 @@
     flex: 0 0 50%;
     margin-right: 20px;
   }
+
+  .embla__dot {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -187,8 +192,8 @@
 }
 
 .embla__dot {
-  width: 2.4rem;
-  height: 2.4rem;
+  height: 1.5rem;
+  width: 1.5rem;
   display: flex;
   align-items: center;
   margin-right: 0.75rem;

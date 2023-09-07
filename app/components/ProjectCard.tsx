@@ -27,7 +27,7 @@ const ProjectCard = ({
                 src="https://wpvip.edutopia.org/wp-content/uploads/2022/10/robinson-169hero-portfolio-shutterstock.jpg?w=2880&quality=85"
                 alt=""
               /> */}
-    <PrismicNextImage field={project_image} className="h-[350px] w-[400px] lg:h-[550px] lg:w-[800px] object-contain object-center" />
+    <PrismicNextImage field={project_image} className="h-[250px] w-[400px] lg:h-[550px] lg:w-[800px] object-contain" />
     <div className="space-y-10 px-0 md:px-10 max-w-6xl">
       <h4 className="text-2xl md:text-4xl font-semibold text-center px-2">
         {/* <span className="underline decoration-[#3AD9CE]/50">
