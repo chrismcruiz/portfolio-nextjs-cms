@@ -74,7 +74,7 @@ const Projects = ({ slice }: ProjectsProps): JSX.Element => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
         // h-screen 
-        className="container md:h-full flex flex-col overflow-hidden text-left max-w-full justify-evenly mx-auto items-center z-0 space-y-10 relative px-10 py-40"
+        className="container h-full flex flex-col max-w-full justify-evenly mx-auto items-center z-0 space-y-10 relative px-6 md:px-10 py-40"
       >
         <PrismicRichText
           field={title}
@@ -88,7 +88,7 @@ const Projects = ({ slice }: ProjectsProps): JSX.Element => {
           field={information}
           components={{
             paragraph: ({ children }) => (
-              <div className="uppercase tracking-[3px] text-gray-500 text-sm">
+              <div className="uppercase tracking-[3px] text-gray-500 text-sm text-left">
                 {children}
               </div>
             ),

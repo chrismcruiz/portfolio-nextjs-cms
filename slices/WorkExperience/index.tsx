@@ -66,7 +66,7 @@ const WorkExperience = ({ slice }: WorkExperienceProps): JSX.Element => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
         // h-screen 
-        className="md:h-full text-left flex flex-col overflow-hidden max-w-full px-10 py-20 mx-auto items-center"
+        className="md:h-full text-left flex flex-col overflow-hidden max-w-full px-6 md:px-10 py-20 mx-auto items-center container"
       >
             <PrismicRichText
           field={title}

@@ -55,9 +55,9 @@
 .embla__slide {
   flex: 0 0 var(--slide-size);
   min-width: 0;
-  padding-left: var(--slide-spacing);
+  /* padding-left: var(--slide-spacing);
+  margin-right: var(--slide-gap); */
   position: relative;
-  margin-right: var(--slide-gap);
 }
 
 .embla__slide--projects {
@@ -183,6 +183,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 2em;
 }
 
 .embla__dot {

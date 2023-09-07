@@ -23,7 +23,7 @@ const ExperienceCard = ({
   const tasks = [task_1, task_2, task_3];
   return (
     // cursor-grab snap-x snap-mandatory
-    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40  transition-opacity duration-200 overflow-hidden embla__slide">
+    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] bg-[#292929] p-6 md:p-10 hover:opacity-100 opacity-40  transition-opacity duration-200 overflow-hidden embla__slide">
       {/* <motion.img
         initial={{
           y: -100,

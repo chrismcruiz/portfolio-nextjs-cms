@@ -17,7 +17,7 @@ const ProjectCard = ({
   index,
   itemsLength,
 }: Props) => (
-  <div className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center md:px-44 h-screen md:h-full embla__slide--projects">
+  <div className="w-screen flex-shrink-0 flex flex-col space-y-5 items-center md:px-44 h-full embla__slide--projects">
     {/* <motion.img
                 initial={{ opacity: 0, y: -300 }}
                 transition={{ duration: 1.2 }}
@@ -27,9 +27,9 @@ const ProjectCard = ({
                 src="https://wpvip.edutopia.org/wp-content/uploads/2022/10/robinson-169hero-portfolio-shutterstock.jpg?w=2880&quality=85"
                 alt=""
               /> */}
-    <PrismicNextImage field={project_image} className="h-[400px] w-[400px] lg:h-[550px] lg:w-[800px] object-contain object-center" />
+    <PrismicNextImage field={project_image} className="h-[350px] w-[400px] lg:h-[550px] lg:w-[800px] object-contain object-center" />
     <div className="space-y-10 px-0 md:px-10 max-w-6xl">
-      <h4 className="text-4xl font-semibold text-center">
+      <h4 className="text-2xl md:text-4xl font-semibold text-center px-2">
         {/* <span className="underline decoration-[#3AD9CE]/50">
             Case of Study {index + 1} of {itemsLength}:
           </span>{" "} */}
@@ -39,7 +39,7 @@ const ProjectCard = ({
         field={project_description}
         components={{
           paragraph: ({ children }) => (
-            <p className="text-lg text-center md:text-left">{children}</p>
+            <p className="text-base md:text-lg text-center md:text-left px-4">{children}</p>
           ),
         }}
       />

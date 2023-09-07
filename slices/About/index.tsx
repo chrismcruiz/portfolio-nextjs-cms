@@ -23,7 +23,7 @@ const About = ({ slice }: AboutProps): JSX.Element => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
-        className=" max-w-7xl mx-auto text-center px-10 py-20"
+        className=" max-w-7xl mx-auto text-center px-6 md:px-10 py-20 container"
       >
         <PrismicRichText
           field={title}
@@ -46,7 +46,7 @@ const About = ({ slice }: AboutProps): JSX.Element => {
               field={subtitle}
               components={{
                 heading3: ({ children }) => (
-                  <h3 className="text-4xl font-semibold">{children}</h3>
+                  <h3 className="text-3xl md:text-4xl font-semibold">{children}</h3>
                 ),
                 label: ({ node, children }) => (
                   <span

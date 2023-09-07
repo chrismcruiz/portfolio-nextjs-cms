@@ -26,7 +26,7 @@ const Skills = ({ slice }: SkillsProps): JSX.Element => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
         // h-screen
-        className="md:h-full flex flex-col text-center md:text-left max-w-[2000px] px-10 py-20 justify-center mx-auto items-center space-y-10 container"
+        className="md:h-full flex flex-col text-center md:text-left max-w-[2000px] px-6 md:px-10 py-20 justify-center mx-auto items-center space-y-10 container"
       >
         <PrismicRichText
           field={title}
@@ -46,7 +46,7 @@ const Skills = ({ slice }: SkillsProps): JSX.Element => {
             ),
           }}
         />
-        <div className="grid grid-cols-4 gap-5">
+        <div className="grid grid-cols-3 md:grid-cols-4 md:gap-5 gap-2">
           {items.map((skill, index) => {
             const itemsLength = items.length;
             const shouldGoLeft = index + 1 > Math.ceil(itemsLength / 2);

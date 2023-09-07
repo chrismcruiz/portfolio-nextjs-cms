@@ -33,7 +33,7 @@ const Contact = ({ slice }: ContactProps): JSX.Element => {
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
     >
-      <div className="container md:h-full flex flex-col items-center text-center md:text-left max-w-7xl px-10 py-20 justify-evenly mx-auto">
+      <div className="container md:h-full flex flex-col items-center text-center md:text-left max-w-7xl px-6 md:px-10 py-20 justify-evenly mx-auto">
         <PrismicRichText
           field={title}
           components={{
@@ -47,7 +47,7 @@ const Contact = ({ slice }: ContactProps): JSX.Element => {
             field={subtitle}
             components={{
               paragraph: ({ children }) => (
-                <h3 className="text-4xl font-semibold text-center">{children}</h3>
+                <h3 className="text-2xl md:text-4xl font-semibold text-center">{children}</h3>
               ),
               label: ({ node, children }) => (
                 <span className={`${node.data.label} decoration-[#27B2BA]/50`}>
